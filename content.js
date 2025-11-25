@@ -1,9 +1,12 @@
 (async function() {
   console.log("Predatory Journal Detector: Script loaded successfully.");
 
+  // Use chrome.runtime for Chrome or browser.runtime for Firefox
+  const browserAPI = typeof browser !== 'undefined' ? browser : chrome;
+
   async function init() {
     try {
-      const csvUrl = browser.runtime.getURL("domains.csv");
+      const csvUrl = browserAPI.runtime.getURL("domains.csv");
       console.log("Predatory Journal Detector: Fetching CSV from", csvUrl);
 
       const response = await fetch(csvUrl);
