@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Predatory Journal Warner",
+  "version": "1.0",
+  "description": "Displays a warning banner if the current domain matches one of the domains in the 2025 Predatory Journal list.",
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["domains.csv"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+  "<all_urls>"
+  ]
+}
