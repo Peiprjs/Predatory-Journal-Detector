@@ -4,7 +4,7 @@
   "version": "1.0",
   "description": "Displays a warning banner if the current domain matches one of the domains in the 2025 Predatory Journal list.",
   "icons": {
-    "48": "icons/icon-48.png"
+    "1400": "icons/icon.png"
   },
   "content_scripts": [
     {
@@ -24,5 +24,13 @@
   ],
   "host_permissions": [
   "<all_urls>"
-  ]
+  ],
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "@addon-waiting_for_key",
+    "data_collection_permissions": {
+      "required": ["none"],
+      "optional": []
+    }  }
+}
 }
