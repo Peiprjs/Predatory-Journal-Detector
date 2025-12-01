@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "Predatory Journal Warner",
   "version": "1.0",
+  "author": "Emma Roca",
   "description": "Displays a warning banner if the current domain matches one of the domains in the 2025 Predatory Journal list.",
   "icons": {
     "1400": "icons/icon.png"
@@ -27,7 +28,7 @@
   ],
   "browser_specific_settings": {
   "gecko": {
-    "id": "@addon-waiting_for_key",
+    "id": "predatory_journal_detector@peiphy",
     "data_collection_permissions": {
       "required": ["none"],
       "optional": []
