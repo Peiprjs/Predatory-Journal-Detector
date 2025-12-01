@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Predatory Journal Warner",
+  "name": "Predator Eater",
   "version": "1.0",
   "description": "Displays a warning banner if the current domain matches one of the domains in the 2025 Predatory Journal list.",
   "icons": {
